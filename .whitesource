@@ -21,7 +21,6 @@
   "enableRenovate": "true",
   "transitiveRemediation": "true",
   "rebaseWhen": "behind-base-branch",
-  "prCreation": "not-pending",
   "extends": [
     ":automergeMinor",
     ":disableDependencyDashboard"
