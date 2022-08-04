@@ -13,15 +13,22 @@
     "minSeverityLevel": "LOW",
     "displayLicenseViolations": true
   },
-  "enableRenovate": "true",
+  "remediateSettings": {
+    "transitiveRemediation": true,
+    "workflowRules": {
+      "enabled": true,
+      "minVulnerabilitySeverity": "MEDIUM"
+    }
+      "enableRenovate": "true",
   "transitiveRemediation": "true",
   "rebaseWhen": "behind-base-branch",
+  "prCreation": "not-pending",
   "extends": [
     "config:base", 
     ":automergeMinor",
     ":disableDependencyDashboard"
   ],
-  "packageRules": [
+  "packageRules": [ 
     {
       "groupName": "Terraform",
       "matchPackageNames": ["hashicorp/terraform", "terraform"]
@@ -42,5 +49,6 @@
   },
   "patch": {
     "automerge": true
+  }
   }
 }
