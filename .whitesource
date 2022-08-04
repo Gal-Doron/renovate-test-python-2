@@ -23,7 +23,6 @@
   "rebaseWhen": "behind-base-branch",
   "prCreation": "not-pending",
   "extends": [
-    "config:base", 
     ":automergeMinor",
     ":disableDependencyDashboard"
   ],
