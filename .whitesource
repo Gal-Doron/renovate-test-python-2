@@ -22,6 +22,7 @@
   "transitiveRemediation": "true",
   "rebaseWhen": "behind-base-branch",
   "extends": [
+    "config:base",
     ":automergeMinor",
     ":disableDependencyDashboard"
   ],
