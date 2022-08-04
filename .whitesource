@@ -16,29 +16,12 @@
   "enableRenovate": "true",
   "transitiveRemediation": "true",
   "rebaseWhen": "behind-base-branch",
-  "prCreation": "not-pending",
   "extends": [
     "config:base", 
     ":automergeMinor",
     ":disableDependencyDashboard"
   ],
   "packageRules": [
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "registryUrls": [
-        "https://docker.deere.com"
-      ]
-    },
-    {
-      "matchDatasources": [
-        "pypi"
-      ],
-      "registryUrls": [
-        "https://pypi.deere.com/simple"
-      ]
-    }, 
     {
       "groupName": "Terraform",
       "matchPackageNames": ["hashicorp/terraform", "terraform"]
