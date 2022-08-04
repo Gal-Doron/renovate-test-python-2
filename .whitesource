@@ -14,7 +14,6 @@
     "displayLicenseViolations": true
   },
   "remediateSettings": {
-    "transitiveRemediation": true,
     "workflowRules": {
       "enabled": true,
       "minVulnerabilitySeverity": "MEDIUM"
